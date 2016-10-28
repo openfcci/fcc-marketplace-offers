@@ -98,8 +98,6 @@ add_action( 'admin_head-post-new.php', 'fccmpo_hide_publishing_actions' );
  * Hide 'Tags' metabox from Post Editor
  */
 function fccmpo_hide_client_term_fields() {
-	$screen = get_current_screen();
-	PC::debug( $screen, 'get_current_screen' );
 		echo '
 			<style type="text/css">
 					.taxonomy-marketplace_client .term-slug-wrap,
